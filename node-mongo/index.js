@@ -15,7 +15,7 @@ MongoClient.connect(url, (err, client)=>{
         dboper.findDocuments(db, 'dishes', (docs)=>{
             console.log('Found documents:\n', docs);
         
-            dboper.updateDocument(db, {name:'Pav Bhaji'}, { description: "Updated Pav Bhaji"}, 'dishes', (result)=>{
+            dboper.updateDocument(db, {name:'Chole Bhature'}, { description: "Updated Pav Bhaji"}, 'dishes', (result)=>{
                 console.log("updated document:\n", result.result);
 
                 dboper.findDocuments(db, 'dishes', (docs)=>{
