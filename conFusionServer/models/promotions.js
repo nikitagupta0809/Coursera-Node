@@ -25,7 +25,12 @@ const promoSchema = new Schema({
         type: Currency,
         required: true,
         min: 0
-    }   
+    } ,
+    featured:{
+        type: Boolean,
+        required: true,
+        default: false
+    }  
 }
 );
 
